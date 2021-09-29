@@ -128,6 +128,10 @@ public class Voo implements Serializable {
         }
         this.voosAgendados.add(vooAgendado);
     }
+    
+    public void removerVooAgendado(int index){ 
+        this.voosAgendados.remove(index);
+    }
 
     public Set<Aeroporto> getEscalas() {
         return escalas;

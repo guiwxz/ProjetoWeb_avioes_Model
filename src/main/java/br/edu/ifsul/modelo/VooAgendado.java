@@ -110,7 +110,12 @@ public class VooAgendado implements Serializable {
         if (this.passagens == null) {
             this.passagens = new ArrayList();
         }
+        passagem.setVooAgendado(this);
         this.passagens.add(passagem);
+    }
+    
+    public void removerPassagem(int index){
+        this.passagens.remove(index);
     }
 
     public Voo getVoo() {
